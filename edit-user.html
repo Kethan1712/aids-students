@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Edit or Delete a Student</h1>
+            <p>Choose a student to edit or delete.</p>
+        </header>
+        <main>
+            <!-- Home Button -->
+            <button onclick="window.location.href='index.html'">Home</button>
+
+            <select id="userSelect">
+                <option value="">Select a Student to Edit/Delete</option>
+                <!-- Users will be dynamically populated here -->
+            </select>
+
+            <div id="studentDetails"></div>
+
+            <button onclick="editStudent()">Save Changes</button>
+            <button onclick="deleteStudent()">Delete Student</button>
+        </main>
+    </div>
+
+    <script src="edit-user.js"></script>
+</body>
+</html>

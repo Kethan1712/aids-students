@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button class="home-btn" onclick="window.location.href='index.html'">Home</button>
+    <div class="container">
+        <header>
+            <h1>Student Information Portal</h1>
+            <p>Manage and view student details efficiently</p>
+        </header>
+        <main>
+            <!-- Card 1 - View Students -->
+            <div class="card" onclick="window.location.href='view-user.html'">
+                <h2>View Students in AI/DS</h2>
+                <p>Explore the complete list of students enrolled in AI and Data Science.</p>
+            </div>
+
+            <!-- Card 2 - Add Student -->
+            <div class="card" onclick="window.location.href='add-user.html'">
+                <h2>Add a Student</h2>
+                <p>Enter new student details to the database.</p>
+            </div>
+
+            <!-- Card 3 - Edit/Delete Students -->
+            <div class="card" onclick="window.location.href='edit-user.html'">
+                <h2>Edit/Delete Students</h2>
+                <p>Modify or remove existing student records.</p>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 Student Info Portal. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

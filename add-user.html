@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Add a New Student</h1>
+            <p>Fill in the details below to add a new student.</p>
+        </header>
+        <main>
+            <!-- Home Button -->
+            <button onclick="window.location.href='index.html'">Home</button>
+
+            <form id="addStudentForm">
+                <label for="id">Student ID:</label>
+                <input type="number" id="id" name="id" required>
+
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+
+                <button type="submit">Add Student</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="add-user.js"></script>
+</body>
+</html>
